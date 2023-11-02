@@ -7,14 +7,15 @@ import getHeroes from '@/api/getHeroes';
 
 export default function ListHeroes() {
 
-  const {heroes, setHeroes} = useContext(HeroesContext);
+  const {heroes, setHeroes, setLoading} = useContext(HeroesContext);
   //const [totalPower, settotalPower] = React.useState([]);
 
   React.useEffect(() => {
     getHeroes().then((response) => {
       setHeroes(response);
+      setLoading(false);
     });
-  }, [setHeroes]);
+  }, [setHeroes, setLoading]);
 
   return (
     <section className="grid p-12 gap-6 content-center justify-items-center lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1">

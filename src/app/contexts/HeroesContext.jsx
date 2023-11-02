@@ -7,10 +7,13 @@ export const HeroesContext = createContext();
 const HeroesContextProvider = ({children}) => {
 
   const [heroes, setHeroes] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   const value = {
     heroes,
-    setHeroes
+    setHeroes,
+    loading,
+    setLoading
   };
 
   return (
