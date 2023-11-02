@@ -7,7 +7,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import SearchBar from './SearchBar/SearchBar';
 
-export default function Header() {
+export default function Header({searchValue, setSearchValue}) {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -20,7 +20,7 @@ export default function Header() {
           >
             Heroes
           </Typography>
-          <SearchBar/>
+          <SearchBar searchValue={searchValue} setSearchValue={setSearchValue}/>
         </Toolbar>
       </AppBar>
     </Box>
