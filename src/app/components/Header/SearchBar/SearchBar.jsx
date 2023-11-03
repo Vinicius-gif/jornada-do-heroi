@@ -3,7 +3,7 @@
 import React from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 
-const SearchBar = ({searchValue, setSearchValue}) => {
+const SearchBar = ({search, setSearch}) => {
   
   return (
     <section className="flex bg-white max-w-md shadow-sm justify-between gap-3 pr-3 xl:w-full lg:w-full md:w-4/5 sm:w-1/2">
@@ -12,8 +12,8 @@ const SearchBar = ({searchValue, setSearchValue}) => {
         className="p-3 grow outline-none text-lg font-medium border-r border-gray-300 text-gray-800 placeholder-gray-800"
         type="text"
         placeholder="Buscar Herói..."
-        value={searchValue}
-        onChange={(e) => setSearchValue(e.target.value)}
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
       />
       <button
         type="button"
