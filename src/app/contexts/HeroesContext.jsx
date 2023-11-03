@@ -8,12 +8,24 @@ const HeroesContextProvider = ({children}) => {
 
   const [heroes, setHeroes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [selectedHeroes, setSelectedHeroes] = useState([]);
+  const [winner, setWinner] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [search, setSearch] = useState('');
 
   const value = {
     heroes,
     setHeroes,
     loading,
-    setLoading
+    setLoading,
+    selectedHeroes,
+    setSelectedHeroes,
+    winner,
+    setWinner,
+    isModalOpen,
+    setIsModalOpen,
+    search,
+    setSearch
   };
 
   return (
