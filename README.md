@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Desafio Jornada do Herói (Azapfy)
 
-## Getting Started
+O projeto consiste na manipulação da Api: http://homologacao3.azapfy.com.br/api/ps/metahumans, disponibilizado pela azapfy, que retorna dados de vários personagens. O projeto contém cards desses personagens, um input de filtragem dos personagens e também ao clicar em dois heróis um modal é exibido informando o ganhador. Vence aquele com maior somatório de powerstats.
 
-First, run the development server:
+## Índice
+
+- [Visão geral](#visão-geral)
+  - [Screenshot Desktop](#screenshot-desktop)
+  - [Como executar](#como-executar)
+  - [O Projeto](#o-projeto)
+  - [Links](#links)
+- [Construído com](#construído-com)
+- [Autor](#autor)
+
+## Visão geral
+
+### Screenshot Desktop
+
+![Screenshot](public/images/screeshot1.png)
+
+**Modal**
+
+![Screenshot](public/images/screeshot3.png)
+
+### Como executar
+
+#### Requisitos
+* Node
+* VS code
+* Git
+
+**Clone o projeto em alguma pasta pelo CMD**
+
+```bash
+git clone https://github.com/Vinicius-gif/jornada-do-heroi.git 
+```
+Em seguida acesse a pasta do projeto
+```bash
+cd jornada-do-heroi
+```
+Depois instale as dependências do projeto
+```bash
+npm i
+```
+**E por ultimo, execulte o projeto com**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+**Acesse o endereço: http://localhost:3000/**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### O Projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Os usuários devem ser capazes de:
 
-## Learn More
+-  Visualizar o layout ideal para o site, dependendo do tamanho da tela do seu dispositivo
+-  Visualizar a listagem dos cards na tela (imagem, nome e poder)
+-  Utilizar a barra de pesquisa para encontrar o personagem
+-  Clicar em dois personagens para visualizar o modal de batalha
+- Visualizar o modal exibindo o vencedor
 
-To learn more about Next.js, take a look at the following resources:
+## Construído com
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Next.js](https://nextjs.org/) - React framework
+- [Tailwind css](https://tailwindcss.com/) - Para estilização
+- Material UI
+- React Icons
+- React Context - gerenciar estados
+- Fech - Para consumir API
+- React hooks
+- Responsividade
+- Eslint - identação do código
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Autor
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Linkedin - [Vinicius Felipe](https://www.linkedin.com/in/vinicius-felipe-5148a81b5/)
