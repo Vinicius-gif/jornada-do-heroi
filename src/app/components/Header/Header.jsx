@@ -6,8 +6,12 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import SearchBar from './SearchBar/SearchBar';
+import { HeroesContext } from '@/app/contexts/HeroesContext';
 
-export default function Header({searchValue, setSearchValue}) {
+export default function Header() {
+
+  const {search, setSearch} = React.useContext(HeroesContext);
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -20,7 +24,7 @@ export default function Header({searchValue, setSearchValue}) {
           >
             Heroes
           </Typography>
-          <SearchBar searchValue={searchValue} setSearchValue={setSearchValue}/>
+          <SearchBar search={search} setSearch={setSearch}/>
         </Toolbar>
       </AppBar>
     </Box>
