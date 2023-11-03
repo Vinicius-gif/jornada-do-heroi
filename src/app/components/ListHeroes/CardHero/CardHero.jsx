@@ -9,12 +9,12 @@ import { CardActionArea } from '@mui/material';
 import { HeroesContext } from '@/app/contexts/HeroesContext';
 import Loading from '../Loading';
 
-export default function CardHero({thumb, name, power}) {
+export default function CardHero({thumb, name, power, onClick}) {
 
   const { loading } = React.useContext(HeroesContext);
 
   return (
-    <Card sx={{ maxWidth: 200 }}>
+    <Card sx={{ maxWidth: 200 }} onClick={onClick}>
       <CardActionArea>
         {
           loading ? <Loading/>
